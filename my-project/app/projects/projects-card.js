@@ -1,4 +1,5 @@
 import { MdArrowOutward } from "react-icons/md";
+import Image from "next/image";
 
 export default function ProjectCard({ title, image, description, tags = [], href }) {
   return (
@@ -24,18 +25,18 @@ export default function ProjectCard({ title, image, description, tags = [], href
           duration-300
         "
       >
-        <img
+        <Image
           src={image}
           alt={title}
+          fill
           className="
-            w-full
-            h-full
             object-cover
             object-top
             transition-transform
             duration-300
             group-hover:scale-105
           "
+          
         />
       </div>
 

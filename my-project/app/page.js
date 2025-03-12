@@ -7,72 +7,74 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <>
-      <img
+      <Image
         src="/about/sunflower.gif"
         alt="Sunflower"
+        width={400}
+        height={400}
         className="
           absolute
           top-88
           right-0
-          w-[400px]
-          h-auto
           z-0
-        
+          /* We rely on this class for the 'w-[400px] h-auto' effect */
         "
+        style={{ width: "400px", height: "auto" }}
       />
-      <img
+      <Image
         src="/about/sunflower.gif"
         alt="Sunflower"
+        width={400}
+        height={400}
         className="
           absolute
           top-52
           right-28
-          w-[400px]
-          h-auto
           z-0
         "
+        style={{ width: "400px", height: "auto" }}
       />
-      <img
+      <Image
         src="/about/sunflower.gif"
         alt="Sunflower"
+        width={400}
+        height={400}
         className="
           absolute
           top-10
           right-2
-          w-[400px]
-          h-auto
           z-0
         "
+        style={{ width: "400px", height: "auto" }}
       />
-      <img
+      <Image
         src="/about/twoflower.PNG"
         alt="Twoflower"
+        width={300}
+        height={300}
         className="
           absolute
           bottom-8
           left-10
-          w-[300px]
-          h-auto
           z-0
         "
+        style={{ width: "300px", height: "auto" }}
       />
-      <img
+      <Image
         src="/about/hibiscus.png"
         alt="Hibiscus"
+        width={200}
+        height={200}
         className="
           absolute
           bottom-72
           left-4
-          w-[200px]
-          h-auto
           z-0
         "
+        style={{ width: "200px", height: "auto" }}
       />
 
       <div className="relative z-10 px-80 pt-24 font-nav min-h-screen">
-        
-
-        {/* The two columns */}
         <div className="flex flex-row items-stretch justify-between">
           <div className="max-w-md flex flex-col justify-between">
             <div>
@@ -245,23 +247,24 @@ export default function HomePage() {
                 - - - - resume
               </a>
 
-              <img
+              <Image
                 src="/about/butterfly.gif"
                 alt="Animated butterfly"
+                width={16}
+                height={10}
                 className="
-                  absolute 
+                  absolute
                   bottom-12
-                  right-14
-                  w-16 
-                  h-10
+                  right-18
                   pointer-events-none
                   opacity-0
                   transition
                   duration-500
                   group-hover:opacity-200
                   group-hover:scale-100
-                  z-50
+                  z-0
                 "
+                style={{ width: "40px", height: "36px" }}
               />
             </div>
 
@@ -270,20 +273,22 @@ export default function HomePage() {
               and documenting special moments
             </p>
             <p className="mt-4 max-w-xs">
-              this portfolio is an archive of everything I've made so far
+              this portfolio is an archive of everything I have made so far
             </p>
             <p className="mt-4 max-w-xs">
               look around and feel free to reach out
             </p>
           </div>
 
-          {/* right column */}
           <div>
-            <img
+            <Image
               src="/about/profile.jpg"
               alt="Profile"
+              width={288} 
+              height={288}
               className="
                 w-72
+                h-auto
                 object-scale-down
                 rounded-sm
                 shadow-[8px_-8px_20px_0_#0b0b0b]

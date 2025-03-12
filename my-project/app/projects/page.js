@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       image: "/projects/RocketFocus.jpg",
       description:
         "Chrome Extension that keeps you on-task by detecting distracting websites, blocking them and offering a Pomodoro timer",
-      tags: ["Next.js", "React", "Productivity"],
+      tags: ["Manifest V3", "GCP", "JavaScript", "Python"],
       specialZoom: true, 
       href: "https://github.com/KrishnaM0310/mission-complete",
     },
