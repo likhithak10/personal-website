@@ -225,7 +225,7 @@ export default function HomePage() {
 
             <div className="mt-10 mb-6 relative inline-block group">
               <a
-                href="/about/resume.pdf"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
